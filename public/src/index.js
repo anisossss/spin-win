@@ -121,10 +121,7 @@ let lastAmount = 0;
 // Update balance and last amount in the UI
 function updateBalanceUI() {
   const balanceEl = document.querySelector("#balance");
-  const lastAmountEl = document.querySelector("#last-amount");
-
   balanceEl.textContent = `Balance: $${userBalance}`;
-  lastAmountEl.textContent = `Last Amount: $${lastAmount}`;
 }
 
 events.addListener("spinEnd", (sector) => {
