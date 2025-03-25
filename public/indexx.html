@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wheel of Luck</title>
+    <meta charset="UTF-8" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Macondo:wght@400;700&display=swap");
+    </style>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div id="spin_the_wheel">
+      <canvas id="wheel" width="800" height="800"></canvas>
+      <div id="spin">SPIN</div>
+    </div>
+
+    <div id="popup">
+      <div id="popup-content">
+        <div id="lottie"></div>
+        <img
+          id="sector-image"
+          alt="Sector Image"
+          style="width: 100px; height: 100px; margin: 20px auto"
+        />
+        <h2 id="popup-text"></h2>
+        <button id="close-popup">Close</button>a
+      </div>
+    </div>
+    <div id="game-info">
+      <h3 id="balance">Balance: $100</h3>
+    </div>
+    <div style="position: absolute; bottom: 0; left: 0">
+      <dotlottie-player
+        src="https://lottie.host/f0f0429e-4fda-40d0-a1a6-cc7a4edbd710/b96YeGbo63.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        autoplay
+        id="lottie-player"
+      ></dotlottie-player>
+    </div>
+    <script>
+      const lottiePlayer = document.getElementById("lottie-player");
+
+      lottiePlayer.addEventListener("mouseenter", () => {
+        lottiePlayer.play();
+      });
+
+      lottiePlayer.addEventListener("mouseleave", () => {
+        lottiePlayer.stop();
+      });
+    </script>
+    <script defer src="src/index.js"></script>
+  </body>
+</html>
