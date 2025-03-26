@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Contact - Cartes Cadeaux</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- You can link to your original CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar (same as main page) -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/" class="active">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PGNpcmNsZSBmaWxsPSIjZmZjYzAwIiBjeD0iMTgiIGN5PSIxOCIgcj0iMTgiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjUuNyAxMy4zYy0uNC0uMi0uOC0uMS0xLjEuMmwtMi44IDIuOEwxNSAxMC41Yy0xLS45LTIuNi0uOS0zLjUgMGwtNy44IDcuOGMtLjUuNS0uNSAxLjMgMCAxLjhhMS4zIDEuMyAwIDAwMS44IDBsNi45LTYuOWMuMS0uMS4yLS4xLjMgMGw3LjcgNy43Yy4yLjIuNi4zLjkuM3MuNi0uMS45LS4zbDUuNC01LjRjLjQtLjQuNS0uOS4xLTEuMmwtMi0xeiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yNCwyMC4xVjI0YzAsLjYtLjQsMS0xLDFoLTJjLS42LDAtMS0uNC0xLTF2LTEuNWwtMi4zLDIuM2MtLjcuNy0xLjYsMS4xLTIuNSwxLjFzLTEuOS0uNC0yLjYtMS4xbC0uOC0uOEg5LjFjLS42LDAtMS0uNC0xLTF2LTJjMC0uNi40LTEsMS0xaDRjLjMsMCwuNi4yLC44LjQuMS4xLjIuMi4yLjR2LjJsMy0zYy4zLS4zLjctLjMuOSwwbDMuOCwzLjh2LTIuOGMwLS42LjQtMSwxLTFoMmMuNiwwLDEsLjQsMSwxdi4xeiIvPjwvc3ZnPg=="
+            alt="Logo"
+          />
+        </a>
+        <span class="logo-text">CartesCadeaux</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/how.html">Comment ça marche</a></li>
+        <li><a href="/about.html">A propos</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <h1>CONTACTEZ-NOUS</h1>
+        <p>
+          Nous sommes à votre écoute pour toute question ou besoin d'assistance
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Par téléphone</h3>
+            <p>Du lundi au vendredi de 9h à 18h</p>
+            <div class="contact-detail">01 23 45 67 89</div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Par email</h3>
+            <p>Réponse sous 24h ouvrées</p>
+            <div class="contact-detail">contact@cartescadeaux.fr</div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Notre adresse</h3>
+            <p>Venez nous rencontrer</p>
+            <div class="contact-detail">
+              123 Avenue des Cadeaux, 75008 Paris
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <h2>ENVOYEZ-NOUS UN MESSAGE</h2>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Votre nom et prénom"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Votre adresse email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Votre numéro de téléphone"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Choisissez un sujet</option>
+                <option value="question">Question générale</option>
+                <option value="claim">Réclamation de gain</option>
+                <option value="technical">Problème technique</option>
+                <option value="partnership">Proposition de partenariat</option>
+                <option value="other">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Votre message"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms"
+                >J'accepte que mes données soient traitées conformément à la
+                politique de confidentialité</label
+              >
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span>Envoyer le message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+
+          <div class="form-success-message" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <h3>Message envoyé avec succès!</h3>
+            <p>Nous vous répondrons dans les plus brefs délais.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-contact">
+        <h2>QUESTIONS FRÉQUENTES</h2>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Comment savoir si j'ai vraiment gagné ?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Si vous gagnez, un message de confirmation s'affiche immédiatement
+              à l'écran. Vous recevez également un identifiant unique que vous
+              devez conserver précieusement pour réclamer votre gain.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Je n'arrive pas à jouer à la roue de la chance, que faire ?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Si vous rencontrez des problèmes techniques, essayez d'abord de
+              rafraîchir votre navigateur ou d'utiliser un autre appareil. Si le
+              problème persiste, contactez-nous par téléphone ou via le
+              formulaire ci-dessus en précisant le type d'appareil et de
+              navigateur que vous utilisez.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Combien de temps ai-je pour réclamer mon gain ?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Vous disposez de 30 jours à compter de la date du gain pour
+              contacter notre service client et réclamer votre carte cadeau.
+              Passé ce délai, le gain ne pourra plus être réclamé.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div>© 2025 Cartes Cadeaux - Tous droits réservés</div>
+      <div class="amazon-powered">
+        <span>Powered by</span>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png"
+          alt="Amazon"
+          height="20"
+        />
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          this.classList.toggle("open");
+          document.querySelector(".nav-links").classList.toggle("active");
+        });
+
+      // FAQ toggle
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const parent = question.parentElement;
+          parent.classList.toggle("active");
+
+          // Toggle icon
+          const icon = question.querySelector("i");
+          if (parent.classList.contains("active")) {
+            icon.classList.replace("fa-chevron-down", "fa-chevron-up");
+          } else {
+            icon.classList.replace("fa-chevron-up", "fa-chevron-down");
+          }
+        });
+      });
+
+      // Form submission
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Here you would normally send the form data to a server
+          // For this example, we just show the success message
+
+          document.getElementById("contactForm").style.display = "none";
+          document.getElementById("formSuccess").style.display = "flex";
+
+          // Reset form after submission
+          this.reset();
+
+          // Hide success message after 5 seconds and show form again
+          setTimeout(() => {
+            document.getElementById("formSuccess").style.display = "none";
+            document.getElementById("contactForm").style.display = "block";
+          }, 5000);
+        });
+    </script>
+  </body>
+</html>
