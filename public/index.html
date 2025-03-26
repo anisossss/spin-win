@@ -10,24 +10,21 @@
     />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@400;600;700&display=swap");
+
       :root {
-        --primary-color: #6c3fa0; /* Changed to purple */
-        --secondary-color: #6c3fa0; /* Changed to purple */
+        --primary-color: #ffcc00;
+        --secondary-color: #ffcc00cb;
         --dark-color: #333333;
         --darker-color: #222222;
         --light-color: #ffffff;
-        --accent-color: #6c3fa0; /* Changed to purple */
+        --accent-color: #ffcc00;
         --background-color: #f8f9fa;
         --text-color: #333333;
         --light-yellow: #fff8e1;
         --yellow-glow: 0 0 15px rgba(255, 204, 0, 0.5);
         --text-shadow: 0 0 8px rgba(255, 204, 0, 0.7);
         --border-color: rgba(255, 204, 0, 0.3);
-        --gradient: linear-gradient(
-          135deg,
-          #ffcc00,
-          #6c3fa0
-        ); /* Updated to yellow and purple */
+        --gradient: linear-gradient(135deg, #ffcc00, #ffcc00b2);
         --light-gradient: linear-gradient(135deg, #fff8e1, #fff3cd);
       }
 
@@ -1232,48 +1229,48 @@
     <script>
       const sectors = [
         {
-          color: "#ffcc00", // Yellow
+          color: "#ffcc00",
           label: "Amazon 500€",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
         },
         {
-          color: "#6c3fa0", // Purple
+          color: "#fff8e1",
           label: "Zalando 250€",
           img: "https://1000logos.net/wp-content/uploads/2020/09/Zalando-Logo.png",
-          textColor: "#ffffff", // White text for better visibility on purple
+          textColor: "#ffa500",
         },
         {
-          color: "#ffcc00", // Yellow
+          color: "#ffcc00",
           label: "Nike 250€",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png",
         },
         {
-          color: "#6c3fa0", // Purple
+          color: "#fff8e1",
           label: "Shein 500€",
           img: "https://logos-world.net/wp-content/uploads/2022/01/SHEIN-Logo.png",
-          textColor: "#ffffff", // White text for better visibility on purple
+          textColor: "#ffa500",
         },
         {
-          color: "#ffcc00", // Yellow
+          color: "#ffcc00",
           label: "Airbnb 1000€",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png",
         },
         {
-          color: "#6c3fa0", // Purple
-          label: "Intermarché 500€",
+          color: "#fff8e1",
+          label: "Amazon 500€",
           img: "https://upload.wikimedia.org/wikipedia/fr/thumb/a/ad/Logo_Interm%C3%A9diaire.svg/1280px-Logo_Interm%C3%A9diaire.svg.png",
-          textColor: "#ffffff", // White text for better visibility on purple
+          textColor: "#ffa500",
         },
         {
-          color: "#ffcc00", // Yellow
+          color: "#ffcc00",
           label: "Amazon 1000€",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
         },
         {
-          color: "#6c3fa0", // Purple
-          label: "Intersport 250€",
+          color: "#fff8e1",
+          label: "Amazon 250€",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/INTERSPORT_Logo.svg/2560px-INTERSPORT_Logo.svg.png",
-          textColor: "#ffffff", // White text for better visibility on purple
+          textColor: "#ffa500",
         },
       ];
 
@@ -1375,7 +1372,7 @@
 
         // Border
         ctx.lineWidth = 2.5;
-        ctx.strokeStyle = "rgba(108, 63, 160, 0.3)"; // Updated to purple with opacity
+        ctx.strokeStyle = "rgba(255, 204, 0, 0.3)";
         ctx.stroke();
 
         // Cyberpunk line element
@@ -1393,7 +1390,7 @@
           rad + Math.sin(ang + arc / 2) * endRadius
         );
         ctx.lineWidth = 2;
-        ctx.strokeStyle = "rgba(108, 63, 160, 0.7)"; // Updated to purple with opacity
+        ctx.strokeStyle = "rgba(255, 204, 0, 0.7)";
         ctx.stroke();
 
         // Text
